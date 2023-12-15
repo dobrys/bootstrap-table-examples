@@ -191,7 +191,8 @@ $(function () {
         if (isSource) {
           $('#example').hide().html(data)
           $('.source-pre').show()
-          $('#source').text(_beautifySource(data))
+          //$('#source').text(_beautifySource(data))
+          $('#source').text(data)
           window.hljs.highlightAll()
         } else {
           $('#example').html(data.replace(/ data-toggle="table"/g, ' data-toggle="bootstrap-table"'))
